@@ -16,7 +16,7 @@ autoenv_init()
   _files=( $(
     while [[ "$PWD" != "/" && "$PWD" != "$home" ]]
     do
-      _file="$PWD/.env"
+      _file="$PWD/.autoenv"
       if [[ -e "${_file}" ]]
       then echo "${_file}"
       fi
